@@ -7,7 +7,8 @@
 
         HTTP (HyperText Transfer Protocol) เป็น Protocol ที่ใช้ในการสื่อสาร / รับส่งข้อมูลทางด้าน Web Application 
         การทำงานของ HTTP จะเป็นการสร้างแล้วส่ง Request ไปยัง Web Server เพื่อร้องขอ Resources เมื่อ Web Server ได้รับ Request
-        ก็จะทำการตรวจสอบสิทธิ์ว่า Request นั้นมีสิทธิ์เข้าถึง Resource ดังกล่าวหรือไม่ หากมีสิทธิ์ Web Server ก็จะจัดสรร Resource ห้ตามที่ Request นั้นร้องขอมา 
+        ก็จะทำการตรวจสอบสิทธิ์ว่า Request นั้นมีสิทธิ์เข้าถึง Resource ดังกล่าวหรือไม่ หากมีสิทธิ์ Web Server ก็จะจัดสรร Resource 
+        ให้ตามที่ Request นั้นร้องขอมา 
 
         HTTP เป็น Protocol ที่ไม่มีการจดจำสถานะการทำงาน  ทุกครั้งที่ Request ไป จะเป็นการสร้าง Request ขึ้นมาใหม่
         โดยไม่มีการจัดเก็บ / จดจำข้อมูลใดๆ ไว้ที่ Web Server  ทุก Request ที่ส่งไป จะถูก Web Server ตรวจสอบสิทธิ์ใหม่ทุกครั้ง  
@@ -20,7 +21,8 @@
         Web Server จะสร้างรหัสชุดนึงขึ้นมา เรียกว่า Session Id  แล้วทำการส่ง Session Id กลับไปพร้อมกับ Request ของ Client 
 
         Client จะเก็บ Session Id ไว้ในรูปแบบที่เรียกว่า Cookies  เมื่อมีการส่ง HTTP Request ไปยัง Web Server อีกครั้ง  
-        Client จะต้องส่ง Session Id กลับไปให้ Web Server ด้วย  เพื่อบอกกับ Web Server ว่า ตนเคย Log in เข้ามาในระบบแล้ว  (ด้วย Session Id ดังกล่าว) จะได้ไม่ต้องตรวจสอบสิทธิ์ใหม่อีกครั้ง  เราเรียกการทำงานแบบนี้ว่า Stateful
+        Client จะต้องส่ง Session Id กลับไปให้ Web Server ด้วย  เพื่อบอกกับ Web Server ว่า ตนเคย Log in เข้ามาในระบบแล้ว 
+        (ด้วย Session Id ดังกล่าว) จะได้ไม่ต้องตรวจสอบสิทธิ์ใหม่อีกครั้ง  เราเรียกการทำงานแบบนี้ว่า Stateful
 
 # ปัจจุบัน  มี  Application ที่ทำงานทั้งที่เป็นแบบ Stateful และ Stateless
 * Stateful คือ Application ที่ใช้ Session
@@ -28,7 +30,8 @@
 
 ## Token
         เป็นรหัสชุดนึงที่เอามาแทน Session Id เอาไว้ระบุตัวตนของ Client  ว่า Client นั้นเป็นใคร
-        ไม่มีรูปแบบตายตัว  แล้วแต่กรรมวิธีที่นำมาใช้  มีทั้งที่เป็น Standard และบางคนก็คิดวิธีการสร้าง Token ขึ้นมาใช้งานเอง  แต่สำหรับบทความนี้  เราใช้ Standard Token ที่มีชื่อว่า JWT (Json Web Token) คือเอา Json data ของผู้ใช้มาสร้างเป็นรหัส (Token)
+        ไม่มีรูปแบบตายตัว  แล้วแต่กรรมวิธีที่นำมาใช้  มีทั้งที่เป็น Standard และบางคนก็คิดวิธีการสร้าง Token ขึ้นมาใช้งานเอง  
+        แต่สำหรับบทความนี้  เราใช้ Standard Token ที่มีชื่อว่า JWT (Json Web Token) คือเอา Json data ของผู้ใช้มาสร้างเป็นรหัส (Token)
 
 
 
