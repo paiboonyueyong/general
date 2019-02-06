@@ -1,11 +1,9 @@
-﻿ก่อนที่เราจะไปทำความรู้จักกับ JWT เรามาทำความรู้จักกับ 2 คำนี้ก่อนครับ
-Stateful
-Sateless
+﻿## Stateful Sateless
 
-Stateful หมายถึง การจดจำสถานะ (state)
-Stateless  หมายถึง การไม่จดจำสถานะ (state)
+        Stateful หมายถึง การจดจำสถานะ (state)
+        Stateless  หมายถึง การไม่จดจำสถานะ (state)
 
-ปัญหา
+#ปัญหา
 
         HTTP (HyperText Transfer Protocol) เป็น Protocol ที่ใช้ในการสื่อสาร / รับส่งข้อมูลทางด้าน Web Application การทำงานของ HTTP จะเป็นการสร้างแล้วส่ง Request ไปยัง Web Server เพื่อร้องขอ Resources 
 เมื่อ Web Server ได้รับ Request  ก็จะทำการตรวจสอบสิทธิ์ว่า Request นั้นมีสิทธิ์เข้าถึง Resource ดังกล่าวหรือไม่ หากมีสิทธิ์ Web Server ก็จะจัดสรร Resource ให้ตามที่ Request นั้นร้องขอมา 
