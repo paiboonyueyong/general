@@ -17,8 +17,8 @@
                 จากปัญหาดังกล่าว  เขาจึงได้คิดค้นวิธีการที่ทำให้ Web Server สามารถจดจำสถานะการทำงาน  
         หรือสถานะของ Client ได้โดยไม่จำเป็นต้องตรวจสอบสิทธิ์ใหม่ทุกครั้ง วิธีการที่นำมาใช้เรียกว่า Session 
         
-                Session เป็นวิธีการที่ Web Server ใช้สำหรับจดจำสถานะการทำงาน / ระบุตัวตนของ Client เมื่อ Client ทำการ Log in เข้าสู่ระบบ
-        Web Server จะสร้างรหัสชุดนึงขึ้นมา เรียกว่า Session Id  แล้วทำการส่ง Session Id กลับไปพร้อมกับ Request ของ Client 
+                Session เป็นวิธีการที่ Web Server ใช้สำหรับจดจำสถานะการทำงาน / ระบุตัวตนของ Client เมื่อ Client ทำการ Log in 
+                เข้าสู่ระบบ Web Server จะสร้างรหัสชุดนึงขึ้นมา เรียกว่า Session Id  แล้วทำการส่ง Session Id กลับไปพร้อมกับ Request ของ Client 
 
                 Client จะเก็บ Session Id ไว้ในรูปแบบที่เรียกว่า Cookies  เมื่อมีการส่ง HTTP Request ไปยัง Web Server อีกครั้ง  
         Client จะต้องส่ง Session Id กลับไปให้ Web Server ด้วย  เพื่อบอกกับ Web Server ว่า ตนเคย Log in เข้ามาในระบบแล้ว 
